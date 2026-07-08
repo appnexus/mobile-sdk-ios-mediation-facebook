@@ -1,5 +1,4 @@
-// swift-tools-version: 6.2
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-tools-version: 6.0
 
 import Foundation
 import PackageDescription
@@ -33,6 +32,11 @@ let package = Package(
         .package(
             url: "https://github.com/facebook/FBAudienceNetwork",
             exact: "6.21.1"
+        ),
+        
+        .package(
+            url: "https://github.com/appnexus/mobile-sdk-ios-spm.git",
+            exact: Version(stringLiteral: sdkVersion)
         )
     ],
     
@@ -49,6 +53,11 @@ let package = Package(
                 .product(
                     name: "FBAudienceNetwork",
                     package: "FBAudienceNetwork"
+                ),
+                
+                .product(
+                    name: "AppNexusSDK",
+                    package: "mobile-sdk-ios-spm"
                 )
             ]
         )
