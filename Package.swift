@@ -15,7 +15,7 @@ let package = Package(
     defaultLocalization: "en",
     
     platforms: [
-        .iOS(.v12)
+        .iOS(.v15)
     ],
     
     products: [
@@ -31,7 +31,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/facebook/FBAudienceNetwork",
-            exact: "6.21.1"
+            exact: "6.22.0"
         ),
         
         .package(
