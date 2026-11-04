@@ -2,11 +2,11 @@
 
 import PackageDescription
 
-let sdkVersion = "9.14.0"
+let sdkVersion = "9.15.0"
 let baseUrl = "https://adsdk.bing.net/mobile/ios/releases"
 
 let facebookCSRAdapterChecksum = """
-8138fb4572b0d69a4b9e88317baff57df5951c3c936646914a45510b45feafe0
+c26990c6a29166c5d721c76c9f521bbbba65e06c65f699030eea62d4a830802b
 """
 
 let package = Package(
